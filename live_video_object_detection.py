@@ -20,7 +20,11 @@ net = cv2.dnn.readNetFromCaffe(PROTOTXT, MODEL)
 
 for _ in range(100):
     ret, frame = cap.read()
-    blob = cv2.dnn.blobFromImage(frame, 1, (224, 224), (104, 117, 123))
+    # For GoogLeNet:
+    # blob = cv2.dnn.blobFromImage(frame, 1, (224, 224), (104, 117, 123))
+    # For SqueezeNet:
+    blob = cv2.dnn.blobFromImage(frame, 1, (227, 227), (0, 0, 0))
+    # Ref:
     
     net.setInput(blob)
     start = time.time()
