@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 
 
-VIDEO = 'http://avlabadmin:avlab32343738@140.118.132.20/img/video.mjpeg'
+VIDEO = 'data/test.avi'
 PROTOTXT = 'models/MobileNetSSD_deploy.prototxt.txt'
 MODEL = 'models/MobileNetSSD_deploy.caffemodel'
 
