@@ -1,11 +1,9 @@
 """Load live stream video from surveillance cam for a certain period and make predictions on it. """
-import os
 import time
-import numpy as np
 import cv2
 
 
-VIDEO = 'data/test.avi'
+VIDEO = 'data/sample-video.avi'
 PROTOTXT = 'models/MobileNetSSD_deploy.prototxt.txt'
 MODEL = 'models/MobileNetSSD_deploy.caffemodel'
 
