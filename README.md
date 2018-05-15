@@ -5,6 +5,12 @@ Inspired by:
 
 https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv/
 
+Install dependance: 
+```
+pip install --upgrade opencv-python
+pip install --upgrade imutils
+```
+
 Create two new directory, rename them as "models" and "data". 
 
 download [MobileNetSSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.caffemodel) and   
