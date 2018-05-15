@@ -5,7 +5,7 @@ Inspired by:
 
 https://www.pyimagesearch.com/2017/08/21/deep-learning-with-opencv/
 
-Install dependance: 
+Install dependancies: 
 ```
 pip install --upgrade opencv-python
 pip install --upgrade imutils
