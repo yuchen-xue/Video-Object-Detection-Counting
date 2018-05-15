@@ -8,7 +8,7 @@ from imutils.video import FPS
 
 # initialize arguments settings
 ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video", type=str, default='data/sample-video.avi',
+ap.add_argument("-v", "--video", type=str,
                 help="path to video you wanna play on")
 ap.add_argument("-p", "--prototxt", default='models/MobileNetSSD_deploy.prototxt.txt',
                 help="path to Caffe prototxt file")
