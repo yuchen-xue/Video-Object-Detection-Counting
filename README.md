@@ -17,4 +17,4 @@ put them into the "models" folder.
 Grab what ever video you like and put it into the "data" folder. 
 
 
-Type "python3 video_object_counter_caffemodel.py --video filename", then you can play around with it. 
+In command prompt, type "python3 video_object_counter_caffemodel.py --video video_filename", then enjoy. 
