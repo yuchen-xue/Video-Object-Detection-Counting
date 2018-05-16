@@ -8,15 +8,19 @@ from imutils.video import FPS
 
 # initialize arguments settings
 ap = argparse.ArgumentParser()
-ap.add_argument("-v", "--video", type=str,
+ap.add_argument("-V", "--video", type=str,
                 help="path to video you wanna play on")
-ap.add_argument("-p", "--prototxt", default='models/MobileNetSSD_deploy.prototxt.txt',
+ap.add_argument("-P", "--prototxt", default='models/MobileNetSSD_deploy.prototxt.txt',
                 help="path to Caffe prototxt file")
-ap.add_argument("-m", "--model", default='models/MobileNetSSD_deploy.caffemodel',
+ap.add_argument("-M", "--model", default='models/MobileNetSSD_deploy.caffemodel',
                 help="path to Caffe pre-trained model")
-ap.add_argument("-s", "--size", type=tuple, default=(0, 0),
-                help="([width], [height]) of the display window. Must be a tuple")
-ap.add_argument("-c", "--confidence", type=float, default=0.2,
+ap.add_argument("-W", "--width", type=int, default=0, 
+                help="width of the video display")
+ap.add_argument("-H", "--height", type=int, default=0, 
+                help="height of the video display")
+ap.add_argument("-R", "--reshape", type=bool, default=False, 
+                help="Whether reshape the video. Default is False")
+ap.add_argument("-C", "--confidence", type=float, default=0.2,
                 help='minimum probability to filter weak detections')
 args = vars(ap.parse_args())
 
@@ -43,8 +47,8 @@ def main():
     # loop over the frames from the video stream
     while cap.isOpened():
         _, frame = cap.read()
-        if args['size'] is not (0, 0):
-            frame = imutils.resize(frame, width=args['size'][0], height=args['size'][1])
+        if args['reshape'] is True:
+            frame = imutils.resize(frame, width=args['width'], height=args['height'])
 
         # grab the frame dimensions, convert it to a blob and feed the network
         (h, w) = frame.shape[:2]
