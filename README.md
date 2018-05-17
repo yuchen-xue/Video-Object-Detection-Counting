@@ -11,16 +11,14 @@ pip install --upgrade opencv-python
 pip install --upgrade imutils
 ```
 
-Create two new directory, rename them as "models" and "data". 
+1. Create two new directory, rename them as "models" and "data". 
 
-download [MobileNetSSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.caffemodel) and   
+2.download [MobileNetSSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.caffemodel) and    
 
-download [MobileNetSSD_deploy.prototxt](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.prototxt)
+3. download [MobileNetSSD_deploy.prototxt](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.prototxt) and rename the file as "MobileNetSSD_deploy.prototxt.txt"
 
-put them into the "models" folder. 
+4. put them into the "models" folder. 
 
+5. Grab what ever video you like and put it into the "data" folder. 
 
-Grab what ever video you like and put it into the "data" folder. 
-
-
-In command prompt, type "python3 video_object_counter_caffemodel.py --video video_filename", then enjoy. 
+6. In command prompt, type "python3 video_object_counter_caffemodel.py --video video_filename", then enjoy. 
