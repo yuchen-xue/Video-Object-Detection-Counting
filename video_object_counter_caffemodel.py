@@ -10,7 +10,7 @@ from imutils.video import FPS
 ap = argparse.ArgumentParser()
 ap.add_argument("-V", "--video", type=str,
                 help="path to video you wanna play on")
-ap.add_argument("-P", "--prototxt", default='models/MobileNetSSD_deploy.prototxt.txt',
+ap.add_argument("-P", "--prototxt", default='models/MobileNetSSD_deploy.prototxt',
                 help="path to Caffe prototxt file")
 ap.add_argument("-M", "--model", default='models/MobileNetSSD_deploy.caffemodel',
                 help="path to Caffe pre-trained model")

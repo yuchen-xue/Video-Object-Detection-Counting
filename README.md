@@ -13,9 +13,9 @@ pip install --upgrade imutils
 
 1. Create two new directory, rename them as "models" and "data". 
 
-2. download [MobileNetSSD_deploy.caffemodel](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.caffemodel) and    
+2. download [MobileNetSSD_deploy.caffemodel](https://github.com/C-Aniruddh/realtime_object_recognition/raw/master/MobileNetSSD_deploy.caffemodel) and    
 
-3. download [MobileNetSSD_deploy.prototxt](https://github.com/chuanqi305/MobileNet-SSD/blob/master/MobileNetSSD_deploy.prototxt) and rename the file as "MobileNetSSD_deploy.prototxt.txt"
+3. download [MobileNetSSD_deploy.prototxt](https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/master/voc/MobileNetSSD_deploy.prototxt) 
 
 4. put them into the "models" folder. 
 
